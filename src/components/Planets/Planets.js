@@ -1,10 +1,19 @@
 import './Planets.css';
-
 import Grid from '../Grid';
 
 function Planets() {
 
-  const data = {
+  return (
+    <div className='App'>
+       <Grid/>
+    </div>
+  );
+}
+
+export default Planets;
+
+
+  /* const data = {
     header: [
       'name',
       'rotation_period',
@@ -213,13 +222,4 @@ function Planets() {
         action: (row) => { console.log(`redirect to grid with ${row.residents.length} Residents`)}
       }
     ]
-  }
-
-  return (
-    <div className='App'>
-      <Grid data={data} />
-    </div>
-  );
-}
-
-export default Planets;
+  } */
